@@ -1,0 +1,6 @@
+{
+  "name": "Taila Ege Beauty",
+  "description": "Landing page para serviços de Lash Design e Micropigmentação.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
