@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
 
   const navLinks = [
     { name: 'Início', href: '#home' },
@@ -19,29 +20,27 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-            <a href="#home" className="flex items-center gap-2">
-              {/* Fallback if logoTaila.jpeg is not found */}
-              <img 
-                src="/logoTaila.jpeg" 
-                alt="Taila Ege Beauty Logo" 
-                className="h-20 w-auto object-contain"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).style.display = 'none';
-                  const textEl = document.getElementById('logo-text-fallback');
-                  if (textEl) textEl.style.display = 'flex';
-                }}
-              />
-              <div id="logo-text-fallback" className="hidden items-center justify-center p-2 border border-primary relative">
-                <div className="absolute inset-1 border border-primary/50"></div>
-                <div className="flex flex-col items-center z-10 px-4 py-2">
-                  <span className="font-serif italic text-2xl tracking-tighter text-secondary">
-                    Taila Ege
-                  </span>
-                  <span className="text-[8px] uppercase tracking-widest text-secondary mt-1">
-                    Beauty
-                  </span>
+            <a href="#home" className="flex items-center gap-2 group">
+              {!logoError ? (
+                <img 
+                  src="/logoTaila.jpeg" 
+                  alt="Taila Ege Beauty Logo" 
+                  className="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                  onError={() => setLogoError(true)}
+                />
+              ) : (
+                <div id="logo-text-fallback" className="flex items-center justify-center p-2 border border-primary relative">
+                  <div className="absolute inset-1 border border-primary/50"></div>
+                  <div className="flex flex-col items-center z-10 px-4 py-2">
+                    <span className="font-serif italic text-2xl tracking-tighter text-secondary">
+                      Taila Ege
+                    </span>
+                    <span className="text-[8px] uppercase tracking-widest text-secondary mt-1">
+                      Beauty
+                    </span>
+                  </div>
                 </div>
-              </div>
+              )}
             </a>
           </div>
           

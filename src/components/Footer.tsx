@@ -7,7 +7,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           
           <div className="text-center md:text-left">
-            <h4 className="text-2xl font-serif mb-4 text-primary italic">Taila Ege</h4>
+            <a href="#home" className="inline-flex items-center gap-3 mb-4 group">
+              <img 
+                src="/logoTaila.jpeg" 
+                alt="Taila Ege Beauty Logo" 
+                className="h-12 w-auto object-contain rounded transition-transform duration-300 group-hover:scale-105"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = 'none';
+                }}
+              />
+              <h4 className="text-2xl font-serif text-primary italic">Taila Ege</h4>
+            </a>
             <p className="text-background/70 text-sm max-w-sm mx-auto md:mx-0 leading-relaxed">
               Realçando sua beleza natural com técnicas avançadas e seguras. Seu olhar é a nossa tela.
             </p>
