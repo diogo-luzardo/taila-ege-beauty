@@ -23,7 +23,7 @@ export default function Header() {
             <a href="#home" className="flex items-center gap-2 group">
               {!logoError ? (
                 <img 
-                  src="/logoTaila.jpeg" 
+                  src={`${import.meta.env.BASE_URL}logoTaila.jpeg`} 
                   alt="Taila Ege Beauty Logo" 
                   className="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
                   onError={() => setLogoError(true)}

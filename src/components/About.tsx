@@ -16,7 +16,7 @@ export default function About() {
             <div className="relative aspect-[4/5] rounded-tr-[100px] rounded-bl-[100px] overflow-hidden border-4 border-primary p-2 z-10 bg-background">
               <div className="w-full h-full rounded-tr-[90px] rounded-bl-[90px] overflow-hidden bg-border">
                 <img
-                  src="/taila.jpeg"
+                  src={`${import.meta.env.BASE_URL}taila.jpeg`}
                   alt="Taila Ege - Especialista em Beleza"
                   className="w-full h-full object-cover object-center"
                   onError={(e) => {

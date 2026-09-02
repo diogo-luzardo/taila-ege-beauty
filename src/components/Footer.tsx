@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="text-center md:text-left">
             <a href="#home" className="inline-flex items-center gap-3 mb-4 group">
               <img 
-                src="/logoTaila.jpeg" 
+                src={`${import.meta.env.BASE_URL}logoTaila.jpeg`} 
                 alt="Taila Ege Beauty Logo" 
                 className="h-12 w-auto object-contain rounded transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
