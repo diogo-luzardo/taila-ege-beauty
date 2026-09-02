@@ -3,7 +3,7 @@ import { MessageCircle, Sparkles, Star } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-[75vh] sm:min-h-[82vh] flex items-center justify-center pt-28 sm:pt-32 pb-14 sm:pb-16 overflow-hidden">
+    <section id="home" className="relative min-h-[75vh] sm:min-h-[82vh] flex items-center justify-center pt-32 sm:pt-36 pb-14 sm:pb-16 overflow-hidden">
       {/* Background Image with Ambient Warmth */}
       <div className="absolute inset-0 z-0">
         <img

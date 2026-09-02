@@ -18,14 +18,14 @@ export default function Header() {
   return (
     <header className="fixed w-full z-50 bg-background/95 backdrop-blur-md border-b border-primary/20 shadow-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20 sm:h-24">
+        <div className="flex justify-between items-center h-24 sm:h-28">
           <div className="flex-shrink-0 flex items-center">
-            <a href="#home" className="flex items-center gap-3 group py-1">
+            <a href="#home" className="flex items-center gap-3 group py-1 overflow-visible">
               {!logoError ? (
                 <img 
                   src={`${import.meta.env.BASE_URL}logoTaila.jpeg`} 
                   alt="Taila Ege Beauty Logo" 
-                  className="h-16 sm:h-20 w-auto object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
+                  className="h-20 sm:h-24 md:h-28 w-auto object-contain mix-blend-multiply scale-110 sm:scale-125 origin-left transition-transform duration-300 group-hover:scale-130 drop-shadow-xs"
                   onError={() => setLogoError(true)}
                 />
               ) : (
