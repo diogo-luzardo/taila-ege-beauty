@@ -3,7 +3,7 @@ import { MessageCircle, Sparkles, Star } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-[75vh] sm:min-h-[82vh] flex items-center justify-center pt-28 sm:pt-32 pb-14 sm:pb-16 overflow-hidden">
+    <section id="home" className="relative pt-24 sm:pt-28 pb-8 sm:pb-10 overflow-hidden">
       {/* Background Image with Ambient Warmth */}
       <div className="absolute inset-0 z-0">
         <img
@@ -18,9 +18,9 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
           className="max-w-3xl mx-auto"
         >
           {/* Luxury Badge */}
@@ -28,7 +28,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface border border-primary/30 text-primary mb-6 shadow-xs"
+            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface border border-primary/30 text-primary mb-3 sm:mb-4 shadow-xs"
           >
             <Sparkles className="w-3.5 h-3.5 text-primary" />
             <span className="text-[11px] sm:text-xs tracking-[0.2em] uppercase font-semibold">
@@ -36,30 +36,30 @@ export default function Hero() {
             </span>
           </motion.div>
 
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif text-secondary mb-5 leading-[1.15] italic">
+          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-serif text-secondary mb-3 sm:mb-4 leading-[1.15] italic">
             Olhar que <span className="text-primary not-italic font-normal">Transforma.</span>
           </h1>
 
-          <p className="text-sm sm:text-base md:text-lg text-secondary/80 mb-8 font-normal max-w-xl mx-auto leading-relaxed">
+          <p className="text-sm sm:text-base md:text-lg text-secondary/80 mb-6 font-normal max-w-xl mx-auto leading-relaxed">
             Especialista em Lash Design e Micropigmentação de Sobrancelhas. 
             Realçando a sua beleza natural com delicadeza, sofisticação e precisão.
           </p>
           
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-10">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-6 sm:mb-8">
             <motion.a
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               href="https://wa.me/5511999999999"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2.5 bg-secondary text-background px-7 py-3.5 rounded-full hover:bg-primary transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto justify-center"
+              className="inline-flex items-center gap-2.5 bg-secondary text-background px-7 py-3 rounded-full hover:bg-primary transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto justify-center"
             >
               <span className="text-xs sm:text-sm font-semibold uppercase tracking-[0.16em]">Agendar via WhatsApp</span>
               <MessageCircle className="w-4 h-4" />
             </motion.a>
             <a
               href="#services"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-primary/40 text-secondary hover:border-primary hover:text-primary transition-all duration-300 text-xs sm:text-sm font-medium tracking-[0.14em] uppercase w-full sm:w-auto justify-center bg-background/60 backdrop-blur-xs"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/40 text-secondary hover:border-primary hover:text-primary transition-all duration-300 text-xs sm:text-sm font-medium tracking-[0.14em] uppercase w-full sm:w-auto justify-center bg-background/60 backdrop-blur-xs"
             >
               Ver Procedimentos
             </a>
@@ -67,10 +67,10 @@ export default function Hero() {
 
           {/* Social Proof & Quality Highlights */}
           <motion.div
-            initial={{ opacity: 0, y: 15 }}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.7 }}
-            className="pt-6 border-t border-primary/20 grid grid-cols-3 gap-3 sm:gap-6 max-w-md mx-auto text-center"
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="pt-4 border-t border-primary/20 grid grid-cols-3 gap-3 sm:gap-6 max-w-md mx-auto text-center"
           >
             <div className="flex flex-col items-center">
               <div className="flex items-center text-primary mb-1">
