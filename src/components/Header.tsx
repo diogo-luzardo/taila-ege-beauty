@@ -16,16 +16,16 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed w-full z-50 bg-background/90 backdrop-blur-md border-b border-primary/20">
+    <header className="fixed w-full z-50 bg-background/95 backdrop-blur-md border-b border-primary/20 shadow-xs">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-20">
+        <div className="flex justify-between items-center h-20 sm:h-24">
           <div className="flex-shrink-0 flex items-center">
-            <a href="#home" className="flex items-center gap-2 group">
+            <a href="#home" className="flex items-center gap-3 group py-1">
               {!logoError ? (
                 <img 
                   src={`${import.meta.env.BASE_URL}logoTaila.jpeg`} 
                   alt="Taila Ege Beauty Logo" 
-                  className="h-14 sm:h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                  className="h-16 sm:h-20 w-auto object-contain mix-blend-multiply transition-transform duration-300 group-hover:scale-105"
                   onError={() => setLogoError(true)}
                 />
               ) : (
@@ -44,17 +44,29 @@ export default function Header() {
             </a>
           </div>
           
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-7 lg:space-x-9">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-secondary hover:text-primary transition-colors duration-300 text-xs uppercase tracking-widest font-semibold"
+                className="relative py-1 text-xs tracking-[0.2em] uppercase font-medium text-secondary/80 hover:text-primary transition-colors duration-300 group"
               >
                 {link.name}
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </nav>
+
+          <div className="hidden md:flex items-center">
+            <a
+              href="https://wa.me/5511999999999"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300 text-xs tracking-[0.18em] uppercase font-medium shadow-xs hover:shadow-sm"
+            >
+              Agendar
+            </a>
+          </div>
 
           <div className="md:hidden flex items-center">
             <button

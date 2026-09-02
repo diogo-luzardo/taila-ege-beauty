@@ -11,7 +11,7 @@ export default function Footer() {
               <img 
                 src={`${import.meta.env.BASE_URL}logoTaila.jpeg`} 
                 alt="Taila Ege Beauty Logo" 
-                className="h-12 w-auto object-contain rounded transition-transform duration-300 group-hover:scale-105"
+                className="h-12 w-12 object-contain rounded-full bg-white p-1 shadow-xs transition-transform duration-300 group-hover:scale-105"
                 onError={(e) => {
                   (e.target as HTMLImageElement).style.display = 'none';
                 }}
