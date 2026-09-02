@@ -59,7 +59,7 @@ export default function Header() {
 
           <div className="hidden md:flex items-center">
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5511978293973"
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 rounded-full border border-primary text-primary hover:bg-primary hover:text-background transition-all duration-300 text-xs tracking-[0.18em] uppercase font-medium shadow-xs hover:shadow-sm"

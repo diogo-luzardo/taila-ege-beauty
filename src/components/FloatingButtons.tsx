@@ -24,7 +24,7 @@ export default function FloatingButtons() {
         transition={{ delay: 1.2 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        href="https://wa.me/5511999999999" // Replace with real WhatsApp
+        href="https://wa.me/5511978293973"
         target="_blank"
         rel="noopener noreferrer"
         className="w-12 h-12 bg-[#25D366] rounded-full flex items-center justify-center text-white shadow-lg relative"
