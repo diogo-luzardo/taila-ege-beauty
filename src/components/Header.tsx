@@ -10,7 +10,7 @@ export default function Header() {
     { name: 'Início', href: '#home' },
     { name: 'Sobre Mim', href: '#about' },
     { name: 'Serviços', href: '#services' },
-    { name: 'Galeria', href: '#gallery' },
+    { name: 'Resultados', href: '#gallery' },
     { name: 'Depoimentos', href: '#testimonials' },
     { name: 'FAQ', href: '#faq' },
   ];
